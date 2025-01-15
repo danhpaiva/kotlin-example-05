@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/metalica"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Cadastro de Clientes"
+            android:textColor="@color/white"
+            android:textSize="30sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/user"></ImageView>
+
+            <Button
+                android:id="@+id/btn_enviarFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enviar Foto"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/white"
+            android:hint="Digite o seu nome"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/white"
+            android:hint="Digite o seu email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/white"
+            android:hint="Digite a sua idade"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/white"
+            android:hint="Digite a sua senha"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Sexo"
+            android:textColor="@color/azul_escuro"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_sexoM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:textColor="@color/beje"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sexoF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminino"
+                android:textColor="@color/beje"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Servicos"
+            android:textColor="@color/azul_escuro"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ckb_musc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musculacao"
+                android:textColor="@color/beje"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/ckb_natacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Natacao"
+                android:textColor="@color/beje"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/ckb_zumba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zumba"
+                android:textColor="@color/beje"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_receberEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Receber email com novidades"
+            android:textColor="@color/azul_escuro"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="Cadastrar"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
